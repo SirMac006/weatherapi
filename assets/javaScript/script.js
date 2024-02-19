@@ -105,12 +105,6 @@ function updateSearchHistory(cityName) {
     const historyItem = `<li class="history-item">${cityName}</li>`;
     searchHistory.prepend(historyItem);
 
-    // Attach click event handler to new history item
-    $(historyItem).on('click', function () {
-        const clickedCity = $(this).text();
-        searchCity(clickedCity); // Search for the city when clicked from history
-        getWeatherData(clickedCity); // Display weather data for the clicked city
-    });
 }
 
 
