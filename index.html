@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+ <header>
+  <h1>Weather Dashboard</h1>
+    <nav>
+      <ul id="navCities">
+        <li><a href="#" onclick="searchCity('New York')">New York</a></li>
+        <li><a href="#" onclick="searchCity('Los Angeles')">Los Angeles</a></li>
+        <li><a href="#" onclick="searchCity('Chicago')">Chicago</a></li>
+        <li><a href="#" onclick="searchCity('Houston')">Houston</a></li>
+        <li><a href="#" onclick="searchCity('Miami')">Miami</a></li>
+      </ul>
+    </nav>
+  </header>
+<!--
+ / \__
+(    @\___
+ /         O
+/   (_____/
+/_____/   U
+-->
+
+<div class="container">
+  <div class="search-container">
+  <label for="cityInput">Enter City:</label>
+  <input type="text" id="cityInput" placeholder="City name">
+  <button id="searchButton">Search</button>
+ </div>
+
+<div class="weather-display" id="weatherDisplay">
+            <!-- Content will be dynamically added here -->
+</div>
+
+<div class="history-container">
+ <h2>Search History</h2>
+ <ul id="searchHistory">
+                <!-- Search history items will be added and shown here -->
+  </ul>
+</div>
+ </div>
+
+<footer>
+ <p id="currentDateTime"></p>
+</footer>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="./assets/javaScript/script.js"></script>
+</body>
+</html>
